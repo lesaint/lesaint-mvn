@@ -26,7 +26,7 @@ export RESET_FORMATTING=`tput sgr0`
 function _custom-mvn()
 {
   (
-  local MULTITHREAD="-T 3"
+  local MULTITHREAD="-T0.5C -DforkCount=0.5C"
   # supprime la chaine '-n' des arguments de la ligne de commande
   local MVN_PARAMS="${*##-n}"
 
